@@ -1,22 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<section class = "hero">
-  <div class = "hero-body">
-    <p class = "title">Twitter World</p>
-    <p class = "subtitle">See what people all around the world are tweeting with this searchbar!</p>
+<div [ngStyle]="{'width': '100vw','height': '100vh'}">
+  <section class = "hero">
+    <div class = "hero-body">
+      <p class = "title">Twitter World</p>
+      <p class = "subtitle">See what people all around the world are tweeting with this searchbar!</p>
+    </div>
+  </section>
+  <div class = "section">
+    <div>
+      <form >
+        <input type = "text">
+        <input type = "text">
+      </form>
+    </div>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+    <!--- twitter section ---->
+    <div>
+      <router-outlet  name='twitter-feed'></router-outlet>
+    </div>
   </div>
-</section>
-<div class = "section">
-  <div>
-    <form >
-      <input type = "text">
-      <input type = "text">
-    </form>
-  </div>
-  <div>
-    <router-outlet></router-outlet>
-  </div>
-  <div></div>
 </div>
-
 
 
