@@ -4,11 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GlobeComponent } from './globe/globe.component';
+import { FeedComponent } from './feed/feed.component';
+import { TopContainerComponent } from './top-container/top-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GlobeComponent
+    GlobeComponent,
+    FeedComponent,
+    TopContainerComponent
   ],
   imports: [
     BrowserModule,
